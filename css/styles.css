@@ -7,7 +7,8 @@ body {
 
 h1,
 h2,
-a {
+a,
+.coming-up {
     font-family: var(--header-font), Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -57,7 +58,8 @@ a {
     color: var(--text);
 }
 
-p {
+p,
+.hyperlink a {
     font-family: var(--body-text), Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -89,6 +91,55 @@ li:hover {
     text-decoration: underline;
 }
 
+.promotion {
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 50px 50px 50px 1fr;
+}
+
+.promotion img {
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.promotion h2 {
+    grid-row-start: 3;
+}
+
+.coming-up,
+.hyperlink,
+.promotion h2 {
+    margin:auto 50px;
+    font-size: 1.5em;
+}
+
+.coming-up {
+    grid-row-start: 2;
+    text-transform: uppercase;
+}
+
+.hyperlink {
+    grid-row-start: 4;
+    margin: auto 50px;
+    font-size: 1em;
+    text-decoration: underline;
+    color: var(--effects);
+}
+
+
+.hyperlink:hover a{
+    font-size: 1.2em;
+    color: var(--effects);
+    filter: drop-shadow(5px 5px 2px var(--drop-shadow));
+}
+
+
+
+
 footer {
     background-color: var(--footer);
     display: grid;
@@ -112,4 +163,3 @@ h3 {
     display: flex;
     gap: 1em;
 }
-
