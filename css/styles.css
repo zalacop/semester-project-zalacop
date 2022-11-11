@@ -88,3 +88,28 @@ li:hover {
     color: var(--effects);
     text-decoration: underline;
 }
+
+footer {
+    background-color: var(--footer);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1fr;
+    padding: 50px 0 50px 80px;
+}
+
+.footer-text,
+h3 {
+    font-size: 1.2em;
+}
+
+.footer-text,
+.fa-brands {
+    color: var(--background);
+}
+
+.icons {
+    font-size: 2.5em;
+    display: flex;
+    gap: 1em;
+}
+
