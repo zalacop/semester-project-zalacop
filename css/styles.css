@@ -1,0 +1,90 @@
+@import "imports/variables.css";
+
+body {
+    background-color: var(--background);
+    margin: 0;
+}
+
+h1,
+h2,
+a {
+    font-family: var(--header-font), Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: var(--header-opacity);
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 120px 80px;
+}
+
+.logo,
+.home-link,
+h1 {
+    grid-row-start: 1;
+}
+
+.logo {
+    max-width: 100px;
+    margin: 30px 0 0 80px;
+    grid-column-start: 1;
+}
+
+.home-link {
+    grid-column-start: 3;
+    grid-row-end: 2;
+    width: 50%;
+    margin: 45px auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1 {
+    color: var(--effects);
+    text-transform: uppercase;
+    margin: 50px auto 0 auto;
+    grid-column-start: 2;
+    font-size: 2em;
+}
+
+nav {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+h2,
+a {
+    color: var(--text);
+}
+
+p {
+    font-family: var(--body-text), Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    font-family: var(--cta-font), Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+}
+
+ul {
+    font-size: 1.5em;
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.active,
+.hover:hover,
+li:hover {
+    color: var(--effects);
+    text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+:root {
+    --background:#E3F5FF;
+    --header: #F2CD13;
+    --message: #F3BB91;
+    --effects: #24566D;
+    --text: #06222E;
+
+    --header-opacity: rgba(242, 205, 19, 0.7);
+    --footer: rgba(6, 34, 46, 0.8);
+
+    --cta-font: 'Lora';
+    --body-text:'Radley';
+    --header-font: 'PT Sans';
+}
