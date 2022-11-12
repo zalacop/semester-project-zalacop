@@ -2,7 +2,7 @@
 
 body {
     background-color: var(--background);
-    margin: 0;
+    margin: 0 auto;
 }
 
 h1,
@@ -354,3 +354,29 @@ h3 {
     padding: 8px 35px;
 }
 
+/* Events */
+.event {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 2.5em;
+    align-items: center;
+    margin: o auto;
+}
+
+.event img {
+    max-width: 50%;
+}
+
+.read {
+    margin: 0;
+}
+
+.botany {
+    height: 400px;
+    margin: 0 110px;
+}
+
+.text {
+    max-width: 500px;
+}
