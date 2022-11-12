@@ -43,15 +43,34 @@
                 <p>Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
             </div>
         </section>
-        <section>
+        <section class="booking">
            <h2>Book a tour</h2>
-           <form>
-            <input type="text" name="name">
-            <input type="text" name="email">
-            <input type="text" name="participants">
-            <input type="text" name="school">
-            <textarea name="message" id="message" cols="30" rows="5"></textarea>
-            <input type="submit" value="Send">
+           <form class="tour">
+            <div class="column">
+                <div class="form">
+                    <input type="text" name="name" class="form__input" autocomplete="off" placeholder="">
+                    <label for="name" class="form__label">Name</label>
+                </div>
+                <div class="form">
+                    <input type="text" name="email" class="form__input" autocomplete="off" placeholder="">
+                    <label for="email" class="form__label">Email address</label>
+                </div>
+                <div class="form">
+                    <input type="text" name="participants" class="form__input" autocomplete="off" placeholder="">
+                    <label for="participants" class="form__label">Participants</label>
+                </div>
+                <div class="form">
+                    <input type="text" name="school" class="form__input" autocomplete="off" placeholder="">
+                    <label for="school" class="form__label">School (optional)</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="form">
+                        <textarea name="message" id="message" class="form__input message" placeholder=""></textarea>
+                        <label for="message" class="form__label">Message</label>
+                </div>
+                <input type="submit" value="Send" class="cta send">
+            </div>
            </form>
         </section>
     </main>
