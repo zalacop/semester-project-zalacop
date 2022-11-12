@@ -59,8 +59,9 @@ a {
 }
 
 p,
-.hyperlink a{
+.hyperlink a {
     font-family: var(--body-text), Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
 }
 
 .cta {
@@ -249,11 +250,6 @@ h3 {
     text-transform: uppercase;
 }
 
-.welcome p,
-.kids p {
-    font-size: 1.2em;
-}
-
 .kids,
 .kids h2 {
     background-color: var(--effects);
@@ -284,7 +280,6 @@ h3 {
 
 
  /* Groups */
-
  .booking {
     background-color: var(--form);
     display: flex;
@@ -379,4 +374,60 @@ h3 {
 
 .text {
     max-width: 500px;
+}
+
+/* Explore */
+.exhibit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 50px auto;
+}
+
+.exhibit img {
+    max-width: 100%
+}
+
+.exhibit__text,
+.right {
+    max-width: 450px;
+    margin: auto 0;
+}
+
+.right {
+    margin: 90px 0 auto 50px;
+}
+
+.exhibit__text,
+.exhibit__img-left {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.exhibit__img1,
+.right {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.exhibit__img2,
+.exhibit__img3 {
+    grid-row-start: 3;
+    height: 110%;
+    margin: 0 auto;
+}
+
+.exhibit__img2 {
+    grid-column-start: 1;
+}
+
+.exhibit__img3 {
+    grid-column-start: 2;
 }
