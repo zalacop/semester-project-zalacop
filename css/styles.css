@@ -130,7 +130,6 @@ h3 {
 }
 
 /* Home Page */
-
 .promotion {
     margin: 50px 100px;
     display: grid;
@@ -430,4 +429,38 @@ h3 {
 
 .exhibit__img3 {
     grid-column-start: 2;
+}
+
+/* Admission & info */
+.admin {
+    max-width: 70%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+
+.question {
+    background-color: var(--form);
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    margin: auto;
+    padding: 80px;
+    gap: 3em;
+}
+
+.question h2 {
+    text-transform: initial;
+}
+
+.feedback {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.question__message {
+    height: 100px;
 }

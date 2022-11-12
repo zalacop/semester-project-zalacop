@@ -28,7 +28,7 @@
         </nav>
     </header>
     <main>
-        <img src="images/colorful-ge15d9f333_1280.jpg" alt="picture of the museum" />
+        <img src="images/colorful-ge15d9f333_1280.jpg" alt="picture of the museum" class="admin" />
         <section>
             <h2>Opening Hours</h2>
             <div>
@@ -69,15 +69,25 @@
             <h2>Food & Drinks</h2>
             <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
         </section>
-        <img src="images/coffee-ga6f764c05_1280.jpg" alt="picture of coffee, croissant and glass of water">
-        <section>
-            <h2>Questions & Feedback</h2>
-            <p>We would be happy to answer any questions you may have and would love to hear what you think of the museum</p>
-            <form>
-                <input type="text" name="email">
-                <textarea name="message" id="message" cols="30" rows="5"></textarea>
-                <input type="submit" value="Send">
-            </form>
+        <img src="images/coffee-ga6f764c05_1280.jpg" alt="picture of coffee, croissant and glass of water" class="admin" />
+        <section class="question">
+            <div class="text">
+                <h2>Questions & Feedback</h2>
+                <p>We would be happy to answer any questions you may have and would love to hear what you think of the museum</p>
+            </div>
+            <div class="feedback">
+                <form class="feedback">
+                    <div class="form">
+                        <input type="text" name="email" class="form__input" autocomplete="off" placeholder="">
+                        <label for="email" class="form__label">Email address</label>
+                    </div>
+                    <div class="form">
+                        <textarea name="message" id="message" class="form__input question__message" placeholder=""></textarea>
+                        <label for="message" class="form__label">Message</label>
+                     </div>
+                    <input type="submit" value="Send" class="cta send">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
