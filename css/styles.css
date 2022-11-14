@@ -464,3 +464,36 @@ h3 {
 .question__message {
     height: 100px;
 }
+
+.hours,
+.hours h2,
+.admission,
+.admission h2 {
+    background-color: var(--effects);
+    color: var(--background);
+    padding: 20px;
+    margin: 0;
+    filter: drop-shadow(5px 5px 5px var(--drop-shadow));
+}
+
+.no-gap {
+    display: flex;
+    gap: 3em;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 0 1.2em;
+}
+
+.admission {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
