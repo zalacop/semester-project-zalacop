@@ -390,6 +390,12 @@ h3 {
     max-width: 100%
 }
 
+.crop__img {
+    width: 500px;
+    height: 308px;
+    object-fit: fill;
+}
+
 .exhibit__text,
 .right {
     max-width: 450px;
