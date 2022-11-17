@@ -763,6 +763,23 @@ h2 {
         font-family: var(--body-text);
     }
 
+    /* Groups */
+    .tour {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        gap: 1em;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .form {
+        width: 250px;
+    }
+
+    .send {
+        padding: 10px 40px;
+    }
  }
 
  @media (max-width:400px){
@@ -773,6 +790,7 @@ h2 {
     .hyperlink:hover {
         font-size: 1em;
     }
+
  }
 
  @media  (max-width:360px) {
