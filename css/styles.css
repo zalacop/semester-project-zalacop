@@ -776,7 +776,7 @@ h2 {
  }
 
  @media  (max-width:360px) {
-    header a {
+    .home-link {
         font-size: 0.7em;
     }
 
