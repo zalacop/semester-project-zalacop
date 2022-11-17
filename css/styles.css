@@ -51,14 +51,14 @@ h1 {
     width: 50%;
     margin: 45px auto;
     text-align: center;
-    font-size: clamp(1em, 0.1em, 1.2em);
+    font-size: clamp(1em, 0.1em + 2vw, 1.2em);
 }
 
 h1 {
     color: var(--effects);
     margin: 50px auto 0 auto;
     grid-column-start: 2;
-    font-size: clamp(0.8em, 0.2em, 2em);
+    font-size: clamp(0.8em, 0.2em + 2vw, 2em);
 }
 
 .menu {
@@ -109,7 +109,7 @@ nav li {
 }
 
 ul {
-    font-size: clamp(1em, 0.2em, 1.5em);
+    font-size: clamp(1em, 0.2em + 2vw, 1.5em);
     display: flex;
     width: 80%;
     margin: 20px auto;
@@ -585,5 +585,29 @@ h2 {
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+        gap: 1em;
+        align-items: left;
+    }
+
+    footer h3,
+    footer p {
+        font-size: 1.2em;
+    }
+
+    .footer-text {
+        font-size: 0.7em;
+        margin: 0;
+        width: 80%;
+    }
+
+    .icons {
+        font-size: 1.5em;
     }
  }
