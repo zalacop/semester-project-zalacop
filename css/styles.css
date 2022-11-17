@@ -26,6 +26,13 @@ header {
     grid-template-rows: 120px 80px;
 }
 
+.fa-bars,
+#menu {
+    display: none;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
 .logo,
 .home-link,
 h1 {
@@ -44,18 +51,23 @@ h1 {
     width: 50%;
     margin: 45px auto;
     text-align: center;
-    font-size: 1.2em;
+    font-size: clamp(1em, 0.1em, 1.2em);
 }
 
 h1 {
     color: var(--effects);
     margin: 50px auto 0 auto;
     grid-column-start: 2;
-    font-size: 2em;
+    font-size: clamp(0.8em, 0.2em, 2em);
 }
 
-nav {
-    grid-row-start: 2;
+.menu {
+    display: grid;
+    grid-template-columns: 20px;
+    grid-column-start: 2;
+}
+
+.menu_nav {
     grid-column-start: 2;
 }
 
@@ -97,7 +109,7 @@ nav li {
 }
 
 ul {
-    font-size: 1.5em;
+    font-size: clamp(1em, 0.2em, 1.5em);
     display: flex;
     width: 80%;
     margin: 20px auto;
@@ -507,3 +519,71 @@ h2 {
     grid-column-start: 2;
     grid-column-end: 4;
 }
+ @media (max-width:430px) {
+    header {
+        grid-template-columns: 100px 1fr 80px;
+        grid-template-rows: 50px 50px;
+    }
+
+    .logo {
+        max-width: 50px;
+        margin: auto;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .menu {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: auto;
+    }
+
+    .fa-bars {
+        font-size: 1.5em;
+    }
+
+    .fa-bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu_nav {
+        display: none;
+    }
+
+    .home-link {
+        width: 100%;
+        grid-column-start: 2;
+        margin: 20px auto;
+    }
+
+    h1 {
+        grid-row-start: 2;
+        margin: 10px auto;
+    }
+
+    .menu:checked ~ .menu_nav {
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        margin: 0;
+    }
+
+    nav li {
+        width: 140px;
+        margin: 10px 20px 10px auto;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--header-opacity);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+ }
