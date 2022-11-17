@@ -79,7 +79,7 @@ a {
 p,
 .hyperlink a {
     font-family: var(--body-text), Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2em;
+    font-size: clamp(0.8em, 0.1em + 2vw, 1.2em);
 }
 
 .cta {
@@ -264,7 +264,7 @@ h3 {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: clamp(1em, 0.1em + 2vw, 1.4em);
 }
 
 .kids,
@@ -274,22 +274,29 @@ h2 {
 }
 
 .kids {
-    width: 100%;
-    padding: 20px 150px;
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+.kids_div { 
+    margin: 0 auto;
+    max-width: 85%;
 }
 
 .club {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5em 1fr;
+    max-width: 100%;
+    margin: 0;
+}
+
+.club p {
+    margin-right: 40px;
 }
 
  .club h3 {
     grid-row-start: 1;
- }
-
- .club p {
-    margin-right: 40px;
  }
 
  .support {
@@ -720,6 +727,42 @@ h2 {
         margin: 3em auto;
         gap: 2em;
     }
+
+    /* Welcome */ 
+    .welcome{
+        max-width: 90%;
+    }
+
+    .welcome img,
+    .kids img {
+        width: 100%;
+    }
+
+    .kids {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+
+    .kids div {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .club {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .club p {
+        margin: 0;
+    }
+
+    .club h3 {
+        text-transform: uppercase;
+        font-family: var(--body-text);
+    }
+
  }
 
  @media (max-width:400px){
