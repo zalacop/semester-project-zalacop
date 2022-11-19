@@ -463,7 +463,7 @@ h2 {
 
 /* Admission & info */
 .admin {
-    max-width: 70%;
+    width: 70%;
     display: flex;
     align-items: center;
 }
@@ -841,18 +841,53 @@ h2 {
      .event img,
      .text {
         width: 90%;
-        margin: 0;
+        margin: 0 auto;
      }
 
      .botany_img {
         height: 280px;
         object-fit: contain;
-
     }
 
      .middle {
         flex-direction: column-reverse;
      }
+
+     /* Admission */
+     .info,
+     .admin_info,
+     .question {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+     }
+
+     .admin {
+        width: 90%;
+     }
+
+     .no-gap {
+        gap: 5em;
+     }
+
+     .admin_info {
+        gap: 0;
+     }
+
+     .question {
+        padding: 50px 10px;
+        gap: 1em;
+     }
+
+     .question h2 {
+        text-align: center;
+     }
+
+     .feedback {
+        width: inherit;
+     }
+
  }
 
  @media (max-width:400px){
