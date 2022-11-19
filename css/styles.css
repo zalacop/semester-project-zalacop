@@ -384,14 +384,14 @@ h2 {
 }
 
 .event img {
-    max-width: 50%;
+    width: 50%;
 }
 
 .read {
     margin: 0;
 }
 
-.botany {
+.botany_img {
     height: 400px;
     margin: 0 110px;
 }
@@ -780,6 +780,79 @@ h2 {
     .send {
         padding: 10px 40px;
     }
+
+    /* Explore */
+    .explore_main {
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        margin: 50px auto;
+    }
+
+    .exhibit {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 0.5fr;
+        width: 90%;
+        margin: 0px auto 50px auto;
+    }
+
+     .exhibit__img1,
+     .exhibit__img-left {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: 2;
+     }
+
+     .exhibit__text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+     }
+
+     .right {
+        margin: 0;
+     }
+
+     .crop__img {
+        object-fit: contain;
+        width: 100%;
+        height: fit-content;
+     }
+
+     .exhibit__img2,
+     .exhibit__img3 {
+        width: 100%;
+        height: fit-content;
+     }
+
+     .botany {
+        height: 150px;
+        width: initial;
+     }
+
+     /* Event */
+     .event {
+        flex-direction: column;
+        margin: 50 auto;
+        gap: 1em;
+     }
+
+     .event img,
+     .text {
+        width: 90%;
+        margin: 0;
+     }
+
+     .botany_img {
+        height: 280px;
+        object-fit: contain;
+
+    }
+
+     .middle {
+        flex-direction: column-reverse;
+     }
  }
 
  @media (max-width:400px){
@@ -819,5 +892,9 @@ h2 {
 
     .promotion a {
         font-size: 0.75em;
+    }
+
+    .botany_img {
+        height: 240px;
     }
  }
