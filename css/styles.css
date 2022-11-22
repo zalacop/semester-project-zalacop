@@ -645,6 +645,30 @@ h2 {
     }
 }
 
+@media (max-width:550px) {
+         /* Event */
+         .event {
+            flex-direction: column;
+            margin: 50 auto;
+            gap: 1em;
+         }
+    
+         .event img,
+         .text {
+            max-width: 100%;
+            margin: 0 auto;
+         }
+    
+         .botany_img {
+            height: 310px;
+            object-fit: contain;
+        }
+    
+         .middle {
+            flex-direction: column-reverse;
+         }
+}
+
 @media (max-width:500px) {
     .logo {
         margin: 10px 20px;
@@ -890,26 +914,9 @@ h2 {
      }
 
      /* Event */
-     .event {
-        flex-direction: column;
-        margin: 50 auto;
-        gap: 1em;
-     }
-
-     .event img,
-     .text {
-        width: 90%;
-        margin: 0 auto;
-     }
-
      .botany_img {
         height: 280px;
-        object-fit: contain;
     }
-
-     .middle {
-        flex-direction: column-reverse;
-     }
 
      /* Admission */
      .info,
