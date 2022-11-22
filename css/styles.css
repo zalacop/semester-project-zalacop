@@ -33,16 +33,9 @@ header {
     grid-row-start: 1;
 }
 
-.logo,
-.home-link,
-h1 {
-    grid-row-start: 1;
-}
-
 .logo {
-    max-width: 100px;
-    margin: 30px 0 0 80px;
-    grid-column-start: 1;
+    width: clamp(70px, 10px + 6vw, 100px);
+    margin: 30px 0 0 60px;
 }
 
 .home-link {
@@ -51,14 +44,14 @@ h1 {
     width: 50%;
     margin: 45px auto;
     text-align: center;
-    font-size: clamp(1em, 0.1em + 2vw, 1.2em);
+    font-size: clamp(1em, 0.1em + 1.5vw, 1.2em);
 }
 
 h1 {
     color: var(--effects);
     margin: 50px auto 0 auto;
     grid-column-start: 2;
-    font-size: clamp(0.8em, 0.2em + 2vw, 2em);
+    font-size: clamp(0.8em, 0.2em + 1.5vw, 2em);
 }
 
 .menu {
@@ -79,7 +72,7 @@ a {
 p,
 .hyperlink a {
     font-family: var(--body-text), Georgia, 'Times New Roman', Times, serif;
-    font-size: clamp(0.8em, 0.1em + 2vw, 1.2em);
+    font-size: clamp(0.8em, 0.1em + 1.5vw, 1.2em);
 }
 
 .cta {
@@ -109,7 +102,7 @@ nav li {
 }
 
 ul {
-    font-size: clamp(1em, 0.2em + 2vw, 1.5em);
+    font-size: clamp(1em, 0.2em + 1.5vw, 1.5em);
     display: flex;
     width: 80%;
     margin: 20px auto;
@@ -380,11 +373,10 @@ h2 {
     max-width: 1000px;
     gap: 2.5em;
     align-items: center;
-    margin: o auto;
 }
 
 .event img {
-    width: 50%;
+    max-width: 50%;
 }
 
 .read {
@@ -393,11 +385,11 @@ h2 {
 
 .botany_img {
     height: 400px;
-    margin: 0 110px;
+    margin: 0 auto;
 }
 
 .text {
-    max-width: 500px;
+    max-width: 50%;
 }
 
 /* Explore */
@@ -526,21 +518,44 @@ h2 {
     grid-column-start: 2;
     grid-column-end: 4;
 }
- @media (max-width:430px) {
+
+
+@media (max-width:1050px){
+    header {
+        grid-template-columns: 100px 1fr 200px;
+        grid-template-rows: 80px 80px;
+    }
+    
+    .logo{
+        margin: 20px 0 0 30px;
+    }
+
+    footer {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width:1000px) {
+    .event {
+        width: 90%;
+    }
+}
+
+@media (max-width:950px) {
+    .botany_img {
+        height: 350px;
+    }
+}
+
+@media (max-width:850px) {
     header {
         grid-template-columns: 100px 1fr 80px;
         grid-template-rows: 50px 50px;
     }
 
-    header a {
-        font-size: 1em;
-    }
-
     .logo {
-        max-width: 50px;
-        margin: auto;
-        grid-row-start: 1;
-        grid-row-end: 3;
+        width: 60px;
+        margin: 10px 30px;
     }
 
     .menu {
@@ -551,7 +566,7 @@ h2 {
     }
 
     .fa-bars {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .fa-bars {
@@ -597,12 +612,25 @@ h2 {
         margin: 0;
         padding: 0;
     }
+}
 
-    .cta {
-        font-size: 0.8em;
-        padding: 10px 20px;
+@media (max-width:800px) {
+    footer {
+        grid-template-columns: 1.5fr 1fr;
     }
+    
+    .botany_img {
+        height: 300px;
+    }
+}
 
+@media (max-width:700px) {
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:650px) {
     footer {
         display: flex;
         flex-direction: column;
@@ -611,14 +639,44 @@ h2 {
         gap: 1em;
     }
 
-    h3,
-    footer p {
-        font-size: 1em;
-    }
-
     .footer-text {
         margin: 0;
         width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .logo {
+        margin: 10px 20px;
+    }
+}
+
+ @media (max-width:430px) {
+    header {
+        grid-template-columns: 100px 1fr 80px;
+        grid-template-rows: 50px 50px;
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    .logo {
+        max-width: 50px;
+        margin: 10px auto;
+    }
+
+    .fa-bars {
+        font-size: 1.5em;
+    }
+
+    .cta {
+        font-size: 0.8em;
+        padding: 10px 20px;
+    }
+
+    footer h3 {
+        font-size: 0.8em;
     }
 
     .icons {
@@ -887,7 +945,6 @@ h2 {
      .feedback {
         width: inherit;
      }
-
  }
 
  @media (max-width:400px){
@@ -898,14 +955,21 @@ h2 {
     .hyperlink:hover {
         font-size: 1em;
     }
-
  }
 
- @media  (max-width:360px) {
+ @media (max-width:375px){
+    .home-link {
+        font-size: 0.8em;
+    }
+ }
+
+ @media (max-width:335px){
     .home-link {
         font-size: 0.7em;
     }
+ }
 
+ @media  (max-width:360px) {
     .hyperlink:hover {
         font-size: 0.85em;
     }
