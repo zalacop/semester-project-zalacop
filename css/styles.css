@@ -243,7 +243,7 @@ h3 {
 /* Welcome */
 .welcome, 
 .kids {
-    max-width: 80%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -273,7 +273,7 @@ h2 {
 
 .kids_div { 
     margin: 0 auto;
-    max-width: 85%;
+    max-width: 1000px;
 }
 
 .club {
@@ -286,6 +286,7 @@ h2 {
 
 .club p {
     margin-right: 40px;
+    font-family: var(--body-text);
 }
 
  .club h3 {
@@ -295,7 +296,6 @@ h2 {
  .support {
     width: 95%;
  }
-
 
  /* Groups */
  .booking {
@@ -533,6 +533,12 @@ h2 {
     footer {
         grid-template-columns: 2fr 1fr;
     }
+
+/* Welcome */
+    .welcome,
+    .kids_div {
+        width: 90%;
+    }
 }
 
 @media (max-width:1000px) {
@@ -643,6 +649,41 @@ h2 {
         margin: 0;
         width: 80%;
     }
+}
+
+@media (max-width:600px) {
+        /* Welcome */ 
+        .welcome{
+            max-width: 90%;
+        }
+    
+        .welcome img,
+        .kids img {
+            width: 100%;
+        }
+    
+        .kids {
+            max-width: 100%;
+            padding: 20px 0;
+        }
+    
+        .kids div {
+            max-width: 90%;
+        }
+    
+        .club {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .club h3 {
+            text-transform: uppercase;
+        }
+    
+        .club p {
+            margin: 0;
+        }
 }
 
 @media (max-width:550px) {
@@ -808,41 +849,6 @@ h2 {
     .open {
         margin: 3em auto;
         gap: 2em;
-    }
-
-    /* Welcome */ 
-    .welcome{
-        max-width: 90%;
-    }
-
-    .welcome img,
-    .kids img {
-        width: 100%;
-    }
-
-    .kids {
-        max-width: 100%;
-        padding: 20px 0;
-    }
-
-    .kids div {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .club {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .club p {
-        margin: 0;
-    }
-
-    .club h3 {
-        text-transform: uppercase;
-        font-family: var(--body-text);
     }
 
     /* Groups */
