@@ -560,6 +560,18 @@ h2 {
     }
 }
 
+@media (max-width:900px) {
+    /* Groups */
+    .tour {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        gap: 1em;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
 @media (max-width:850px) {
     header {
         grid-template-columns: 100px 1fr 80px;
@@ -758,6 +770,15 @@ h2 {
         margin: 10px 20px;
     }
 
+    /* Groups */
+    .form {
+        width: 250px;
+    }
+    
+    .send {
+        padding: 10px 40px;
+    }
+
     /* Admission */
     .info,
     .admin_info {
@@ -913,24 +934,6 @@ h2 {
     .open {
         margin: 3em auto;
         gap: 2em;
-    }
-
-    /* Groups */
-    .tour {
-        display: flex;
-        flex-direction: column;
-        max-width: 90%;
-        gap: 1em;
-        margin: 0 auto;
-        justify-content: center;
-    }
-
-    .form {
-        width: 250px;
-    }
-
-    .send {
-        padding: 10px 40px;
     }
 
     /* Explore */
