@@ -460,12 +460,16 @@ h2 {
 
 .question {
     background-color: var(--form);
-    display: flex;
     max-width: 100%;
+}
+
+.q-f {
+    max-width: 1000px;
+    display: flex;
     justify-content: center;
     margin: auto;
     padding: 80px;
-    gap: 3em;
+    gap: 1em;
 }
 
 .question h2 {
@@ -473,7 +477,6 @@ h2 {
 }
 
 .feedback {
-    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -538,7 +541,7 @@ h2 {
         grid-template-columns: 2fr 1fr;
     }
 
-/* Welcome */
+    /* Welcome */
     .welcome,
     .kids_div {
         width: 90%;
@@ -622,6 +625,28 @@ h2 {
         margin: 0;
         padding: 0;
     }
+
+    /* Admission & Info */
+    .q-f {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+     }
+
+    .q-f {
+        padding: 50px 10px;
+        gap: 1em;
+        max-width: 80%;
+     }
+ 
+     .q-f h2 {
+        text-align: center;
+     }
+ 
+     .feedback {
+        width: inherit;
+     }
 }
 
 @media (max-width:800px) {
@@ -631,6 +656,20 @@ h2 {
     
     .botany_img {
         height: 300px;
+    }
+}
+
+@media (max-width:750px) {
+    /* Admission */
+    .info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .admission {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 
@@ -717,6 +756,27 @@ h2 {
 @media (max-width:500px) {
     .logo {
         margin: 10px 20px;
+    }
+
+    /* Admission */
+    .info,
+    .admin_info {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+    }
+
+    .admin {
+       width: 90%;
+    }
+
+    .no-gap {
+       gap: 5em;
+    }
+
+    .admin_info {
+       gap: 0;
     }
 }
 
@@ -927,41 +987,6 @@ h2 {
      .botany_img {
         height: 280px;
     }
-
-     /* Admission */
-     .info,
-     .admin_info,
-     .question {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-     }
-
-     .admin {
-        width: 90%;
-     }
-
-     .no-gap {
-        gap: 5em;
-     }
-
-     .admin_info {
-        gap: 0;
-     }
-
-     .question {
-        padding: 50px 10px;
-        gap: 1em;
-     }
-
-     .question h2 {
-        text-align: center;
-     }
-
-     .feedback {
-        width: inherit;
-     }
  }
 
  @media (max-width:400px){
