@@ -1,5 +1,4 @@
 @import "imports/variables.css";
-@import "imports/media.css";
 
 body {
     background-color: var(--background);
