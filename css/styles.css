@@ -399,6 +399,10 @@ h2 {
     max-height: 500px;
 }
 
+.botany_exhibit {
+    max-height: 520px;
+}
+
 .exhibit img {
     max-width: 100%
 }
@@ -438,8 +442,11 @@ h2 {
 .exhibit__img2,
 .exhibit__img3 {
     grid-row-start: 3;
-    height: 110%;
     margin: 0 auto;
+}
+
+.botany {
+    height: 180px;
 }
 
 .exhibit__img2 {
