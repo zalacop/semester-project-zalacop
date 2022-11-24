@@ -476,18 +476,11 @@
     }
 
     /* Explore */
-    .explore_main {
-        display: flex;
-        flex-direction: column;
-        gap: 5em;
-        margin: 50px auto;
-    }
-
-    .exhibit{
+    .exhibit {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 3fr 0.5fr;
         width: 90%;
-        margin: 0px auto 50px auto;
+        margin: 50px auto 130px auto;
         max-height: 700px;
     }
 
@@ -523,7 +516,7 @@
      .exhibit__img2,
      .exhibit__img3 {
         width: 100%;
-        height: fit-content;
+        height: unset;
      }
 
      .botany {
@@ -610,6 +603,7 @@
     /* Explore */ 
     .exhibit {
         max-height: 600px;
+        margin: 50px auto 150px auto;
     }
 
     .botany_exhibit {
@@ -630,6 +624,11 @@
     .explore,
     .open {
         margin: 1em;
+    }
+
+    /* Explore */
+    .exhibit {
+        margin: 50px auto 90px auto;
     }
 
     /* Groups */
@@ -727,6 +726,7 @@
     /* Explore */
     .exhibit {
         max-height: 550px;
+        margin: 50px auto 110px auto;
     }
 
     .botany_exhibit {
@@ -752,11 +752,19 @@
     .hyperlink:hover {
         font-size: 1em;
     }
+
+    .exhibit {
+        margin: 50px auto 80px auto;
+    }
  }
 
  @media (max-width:375px){
     .home-link {
         font-size: 0.8em;
+    }
+
+    .exhibit {
+        margin: 50px auto 70px auto;
     }
  }
 
