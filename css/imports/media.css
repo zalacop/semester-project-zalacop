@@ -510,7 +510,7 @@
      .crop__img {
         object-fit: contain;
         width: 100%;
-        height: fit-content;
+        height: 383px;
      }
 
      .exhibit__img2,
