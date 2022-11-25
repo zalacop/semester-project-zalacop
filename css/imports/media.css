@@ -52,7 +52,7 @@
         height: 150px;
     }
 
-     .crop__img {
+    .crop__img {
         height: 290px;
     }
 }
@@ -75,7 +75,7 @@
     .exhibit {
         max-height: 450px;
     }
-     .crop__img {
+    .crop__img {
         height: 280px;
     }
 }
@@ -89,6 +89,7 @@
     .exhibit {
         max-height: 430px;
     }
+
      .crop__img {
         height: 265px;
     }
@@ -110,7 +111,7 @@
         max-height: 410px;
     }
 
-     .crop__img {
+    .crop__img {
         height: 250px;
     }
 }
@@ -202,7 +203,7 @@
         max-height: 405px;
     }
 
-     .crop__img {
+    .crop__img {
         height: 230px;
     }
 
@@ -220,13 +221,13 @@
         max-width: 80%;
      }
  
-     .q-f h2 {
-        text-align: center;
-     }
+    .q-f h2 {
+       text-align: center;
+    }
  
-     .feedback {
+    .feedback {
         width: inherit;
-     }
+    }
 }
 
 @media (max-width:810px) {
@@ -252,7 +253,7 @@
     .coming-up,
     .hyperlink,
     .promotion h2 {
-    margin: auto 0 auto 30px;
+        margin: auto 0 auto 30px;
     }
 
     .open {
@@ -272,7 +273,7 @@
         height: 140px;
     }
 
-     .crop__img {
+    .crop__img {
         height: 220px;
     }
 }
@@ -308,7 +309,7 @@
         height: 130px;
     }
 
-     .crop__img {
+    .crop__img {
         height: 200px;
     }
 }
@@ -359,7 +360,7 @@
         height: 120px;
     }
 
-     .crop__img {
+    .crop__img {
         height: 180px;
     }
 }
@@ -488,42 +489,42 @@
         height: 700px;
     }
 
-     .exhibit__img1,
-     .exhibit__img-left {
+    .exhibit__img1,
+    .exhibit__img-left {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-end: 2;
-     }
+    }
 
-     .exhibit__text {
+    .exhibit__text {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
         max-width: 90%;
-     }
+    }
 
-     .right {
+    .right {
         margin: 0;
-     }
+    }
 
-     .crop__img {
+    .crop__img {
         object-fit: contain;
         width: 100%;
         height: 383px;
-     }
+    }
 
-     .exhibit__img2,
-     .exhibit__img3 {
+    .exhibit__img2,
+    .exhibit__img3 {
         width: 100%;
         height: unset;
-     }
+    }
 
-     .botany {
+    .botany {
         height: 230px;
         width: initial;
         margin-bottom: 50px;
-     }
+    }
 }
 
 @media (max-width:600px) {
@@ -573,7 +574,7 @@
     /* Explore */
     .crop__img {
         height: 360px;
-     }
+    }
 }
 
 @media (max-width:550px) {
@@ -583,8 +584,8 @@
         margin: 50px 30px;
     }
 
-     /* Event */
-     .event {
+    /* Event */
+    .event {
         flex-direction: column;
         margin: 50 auto;
         gap: 1em;
@@ -642,7 +643,7 @@
 
     .crop__img {
         height: 300px;
-     }
+    }
 
     /* Groups */
     .form {
@@ -749,14 +750,14 @@
     .botany {
         height: 150px;
         width: initial;
-     }
+    }
 
     .crop__img {
         height: 255px;
-     }
+    }
 
-     /* Event */
-     .botany_img {
+    /* Event */
+    .botany_img {
         height: 280px;
     }
  }
