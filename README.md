@@ -4,7 +4,7 @@
 
 ![image of homepage](doc/Community_science_museum-homepage.png)
 
-This is a website for a Community Science Museum created for a schhol assigment. It is a biology oriented Community Science Museum.
+This is a website for a Community Science Museum created for a school assigment. It is a biology oriented Community Science Museum.
 
 ## Built with
 
